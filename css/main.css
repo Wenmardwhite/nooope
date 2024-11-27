@@ -5,6 +5,57 @@ body {
 	color: darkslategray;
 	font-size: 16px;
 }
+/* Base styles */
+body {
+    background-color: #CCFFCC;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Button styles remain unchanged */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive gallery */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+    
+    .btn {
+        width: 100%; /* Full width buttons on mobile */
+        text-align: center; /* Center text in buttons */
+    }
+    
+    .menu {
+        display: flex; /* Change menu layout for smaller screens */
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center items */
+    }
+}
 p1 {
 padding: 0;
 	margin: 0;
