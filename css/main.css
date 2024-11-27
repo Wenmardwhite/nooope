@@ -69,7 +69,9 @@ ul, li {
     .header {
         padding-top: 30px; /* Adjust top padding for mobile */
         padding-bottom: 150px; /* Adjust bottom padding for mobile */
-        background-size: contain; /* Change to 'contain' if needed */
+        background-size: cover; /* Ensure the image covers the entire area */
+        width: 100%; /* Make sure it takes the full width */
+        height: auto; /* Allow height to adjust based on content */
     }
 }
 header a {
