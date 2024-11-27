@@ -1,237 +1,61 @@
-body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Anton', sans-serif;
-	color: darkslategray;
-	font-size: 16px;
-}
 /* Base styles */
 body {
-    background-color: #CCFFCC;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #CCFFCC; /* Soft green background */
+    font-family: 'Open Sans', sans-serif; /* Clean and modern font */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Consistent padding */
 }
 
-/* Button styles remain unchanged */
+/* Button styles */
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    display: inline-block; /* Inline block for button behavior */
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #4CAF50; /* Primary button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker shade on hover */
 }
 
 /* Responsive gallery */
 .gallery img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Less padding on smaller screens */
+        padding: 10px; /* Reduced padding on smaller screens */
     }
     
     .btn {
-        width: 100%; /* Full width buttons on mobile */
-        text-align: center; /* Center text in buttons */
+        width: 100%; /* Full width buttons on mobile devices */
+        text-align: center; /* Center text in buttons for better visibility */
+        margin-bottom: 10px; /* Space between buttons on mobile */
     }
     
     .menu {
-        display: flex; /* Change menu layout for smaller screens */
+        display: flex; /* Flexbox layout for menu items */
         flex-direction: column; /* Stack menu items vertically */
-        align-items: center; /* Center items */
+        align-items: center; /* Center menu items horizontally */
+        padding: 0; /* Remove default padding from menu */
+        list-style-type: none; /* Remove default list styling */
     }
-}
-p1 {
-padding: 0;
-	margin: 0;
-	font-family: 'Anton', sans-serif;
-	color: darkslategray;
-	font-size: 27px;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	padding: 0;
-	margin: 0;
-	
-}
-
-h2 {
-	font-size: 60px;
-	margin-bottom: 58px;
-}
-
-h3 {
-	font-size: 27px;
-	margin-bottom: 28px;
-}
-
-a {
-	text-decoration: none;
-}
-
-section {
-	padding-top: 113px	
-}
-
-p {
-	margin: 0;
-}
-
-ul, li {
-	display: block;
-	padding: 0;
-	margin: 0;
-}
-
-.container {
-	width: 1170px;
-	/*позиционирование по центру*/
-	margin: 0 auto; 
-}
-
-.header {
-    background: url('../img/header-bg4.jpg') no-repeat center top / cover;
-    padding-top: 57px;
-    color: #fff;
-    padding-bottom: 322px;
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .header {
-        padding-top: 30px; /* Adjust top padding for mobile */
-        padding-bottom: 150px; /* Adjust bottom padding for mobile */
-        background-size: cover; /* Ensure the image covers the entire area */
-        width: 100%; /* Make sure it takes the full width */
-        height: auto; /* Allow height to adjust based on content */
+    
+    .menu li {
+        margin-bottom: 10px; /* Space between menu items */
+        width: 100%; /* Full width for menu items on mobile */
+        text-align: center; /* Center text in menu items */
     }
-}
-header a {
-	color: #fff;
-}
-
-.logo {
-	margin-right: 69px;
-}
-
-.menu {
-	display: flex;
-}
-
-.menu li a {
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 0.1em;
-}
-
-.menu li a:hover {
-	border-bottom: 1px solid #fff;
-}
-
-.menu li {
-	margin-right: 40px;
-}
-
-.tel {
-	font-size: 17px;
-	margin-left: auto;
-	letter-spacing: 0.1em;
-}
-
-.nav {
-	display: flex;
-	align-items: center;
-}
-
-.offer {
-	text-transform: uppercase;
-	margin-top: 216px;
-}
-
-.offer p {
-	font-size: 30px;
-	letter-spacing: 0.1em;
-}
-
-.offer h1 {
-	font-size: 100px;
-	margin-bottom: 19px;
-	margin-top: -9px;
-	letter-spacing: 0.02em
-}
-
-.btn {
-	display: block;
-	font-size: 17px;
-	text-align: center;
-	letter-spacing: 0.1em;
-	padding: 17px 47px;
-	border: 1px solid #fff;
-	width: 238px;
-	transition: all 0.5s ease;
-}
-
-.btn:hover {
-	background: #fff;
-    color: #000;
-}
-
-.description {
-	display: flex;
-	justify-content: space-between;
-}
-
-.description p {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	text-align: justify;
-	line-height: 1.62em;
-}
-
-.desc-left, .desc-right {
-	width: 567px;
-}
-
-.image-container {
-    overflow: hidden; /* Prevent overflow */
-    margin: 10px; /* Optional: Add margin for spacing */
-}
-
-.gallery img {
-    transition: all 0.5s ease;
-}
-
-.gallery img:hover {
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-}
-
-.footer-text {
-	font-size: 24px;
-	font-family: 'Open Sans', sans-serif;
-	display: flex;
-	padding: 114px 0
-}
-
-.footer-text p {
-	margin-right: 67px;
 }
