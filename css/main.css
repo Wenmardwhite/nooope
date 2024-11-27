@@ -160,19 +160,18 @@ header a {
 	width: 567px;
 }
 
-.gallery {
-	margin-top: 67px;
-	display: flex;
-	justify-content: space-between;
+.image-container {
+    overflow: hidden; /* Prevent overflow */
+    margin: 10px; /* Optional: Add margin for spacing */
 }
 
 .gallery img {
-	transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .gallery img:hover {
-	box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-	transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: scale(1.1);
 }
 
 .footer-text {
