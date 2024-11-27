@@ -58,13 +58,20 @@ ul, li {
 }
 
 .header {
-	background: url('../img/header-bg4.jpg') no-repeat center top / cover;
-	padding-top: 57px;
-	color: #fff;
-	padding-bottom: 322px
-       
+    background: url('../img/header-bg4.jpg') no-repeat center top / cover;
+    padding-top: 57px;
+    color: #fff;
+    padding-bottom: 322px;
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+        padding-top: 30px; /* Adjust top padding for mobile */
+        padding-bottom: 150px; /* Adjust bottom padding for mobile */
+        background-size: contain; /* Change to 'contain' if needed */
+    }
+}
 header a {
 	color: #fff;
 }
